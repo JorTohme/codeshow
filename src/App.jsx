@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './App.css'
 
+import Editor from '@monaco-editor/react'
+
 // Custom Hooks
 import useChange from './Hooks/useChange'
 
@@ -22,13 +24,35 @@ function App () {
         <Menu />
 
         <div className='box html'>
-          <textarea name='html' id='html' cols='30' rows='10' onKeyUp={handleHTML}/>
+          <Editor
+            height='100%'
+            defaultLanguage="html"
+            onChange={handleHTML}
+            theme='vs-dark'
+            options={{ fontSize: 20, minimap: { enabled: false } } }
+            id='html'
+          />
         </div>
         <div className='box css'>
-          <textarea name='css' id='css' cols='30' rows='10' onKeyUp={handleCSS}/>
+          <Editor
+            height='100%'
+            defaultLanguage="css"
+            onChange={handleCSS}
+            theme='vs-dark'
+            options={{ fontSize: 20, minimap: { enabled: false } } }
+            id='css'
+          />
         </div>
         <div className='box js'>
-          <textarea name='js' id='js' cols='30' rows='10' onKeyUp={handleJS}/>
+          <Editor
+            height='100%'
+            width='100%'
+            defaultLanguage="javascript"
+            onChange={handleJS}
+            theme='vs-dark'
+            options={{ fontSize: 20, minimap: { enabled: false } } }
+            id='js'
+          />
         </div>
         <div className='box show-result'>
           <Result html={html} css={css} js={js} />

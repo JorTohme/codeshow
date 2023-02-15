@@ -1,12 +1,20 @@
 function useChange (setHtml, setCss, setJS) {
   const handleHTML = (e) => {
-    setHtml(e.target.value)
+    onkeyup = () => {
+      setHtml(e)
+    }
   }
+
   const handleCSS = (e) => {
-    setCss(e.target.value)
+    onkeyup = () => {
+      setCss(e)
+    }
   }
+
   const handleJS = (e) => {
-    setJS(e.target.value)
+    onkeyup = () => {
+      setJS(e)
+    }
   }
 
   return { handleHTML, handleCSS, handleJS }
