@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './Result.css'
 
 function Result ({ html, css, js }) {
@@ -45,4 +46,9 @@ function Result ({ html, css, js }) {
   )
 }
 
+Result.propTypes = {
+  html: PropTypes.string.isRequired,
+  css: PropTypes.string.isRequired,
+  js: PropTypes.string.isRequired
+}
 export default Result
