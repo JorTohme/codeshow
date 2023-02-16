@@ -42,24 +42,24 @@
 
 .distribution-2 {
   grid-template-areas:
+    "result result result result result result result result result result result result"
+    "result result result result result result result result result result result result"
+    "html html html html css css css css js js js js"
+    "html html html html css css css css js js js js"
+}
+
+.distribution-3 {
+  grid-template-areas:
     "html html html css css css js js js result result result"
     "html html html css css css js js js result result result"
     "html html html css css css js js js result result result"
     "html html html css css css js js js result result result";
 }
 
-.distribution-3 {
-  grid-template-areas:
-    "html html html html html html css css css css css css"
-    "html html html html html html css css css css css css"
-    "js js js js js js result result result result result result"
-    "js js js js js js result result result result result result"
-}
-
 .distribution-4 {
   grid-template-areas:
-    "result result result result result result result result result result result result"
-    "result result result result result result result result result result result result"
-    "html html html html css css css css js js js js"
-    "html html html html css css css css js js js js"
+    "html html html html html html css css css css css css"
+    "html html html html html html css css css css css css"
+    "js js js js js js result result result result result result"
+    "js js js js js js result result result result result result"
 }

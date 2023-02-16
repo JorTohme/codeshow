@@ -16,6 +16,12 @@
   text-align: center;
 }
 
+.menu .distribution-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .menu p {
   font-size: 1.2rem;
   font-weight: 700;
@@ -26,12 +32,30 @@
   font-weight: 500;
 }
 
+.menu input {
+  display: none;
+}
+
 .menu .distribution-selectors {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
 }
 
 .menu .distribution-selector {
   display: flex;
   gap: 5px;
+}
+
+.menu .distribution-selector label {
+  cursor: pointer;
+  height: fit-content;
+}
+
+.menu .distribution-selector img {
+  border: 3px solid #ffffff;
+}
+
+.menu .distribution-selector img:hover {
+  border: 3px solid #d6d6d6;
 }
