@@ -3,13 +3,63 @@
 }
 
 .container {
-  display: flex;
   height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .box {
-  width: 25%;
+  width: 100%;
   height: 100%;
   padding: 0;
-  border-right: 1px solid rgb(255, 255, 255);
+  border: 1px solid black;
+}
+
+.html {
+  grid-area: html;
+}
+
+.js {
+  grid-area: js;
+}
+
+.css {
+  grid-area: css;
+}
+
+.result {
+  grid-area: result;
+}
+
+.distribution-1 {
+  grid-template-areas:
+    "html html html html css css css css js js js js"
+    "html html html html css css css css js js js js"
+    "result result result result result result result result result result result result"
+    "result result result result result result result result result result result result"
+}
+
+.distribution-2 {
+  grid-template-areas:
+    "html html html css css css js js js result result result"
+    "html html html css css css js js js result result result"
+    "html html html css css css js js js result result result"
+    "html html html css css css js js js result result result";
+}
+
+.distribution-3 {
+  grid-template-areas:
+    "html html html html html html css css css css css css"
+    "html html html html html html css css css css css css"
+    "js js js js js js result result result result result result"
+    "js js js js js js result result result result result result"
+}
+
+.distribution-4 {
+  grid-template-areas:
+    "result result result result result result result result result result result result"
+    "result result result result result result result result result result result result"
+    "html html html html css css css css js js js js"
+    "html html html html css css css css js js js js"
 }

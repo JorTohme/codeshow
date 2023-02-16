@@ -17,15 +17,18 @@ function App () {
 
   const { handleHTML, handleCSS, handleJS } = useChange(setHtml, setCss, setJS)
 
+  const [distribution, setDistribution] = useState('distribution-1')
+
+  const handleDistribution = (e) => {
+    setDistribution(e.target.value)
+  }
+
   return (
     <div className='App'>
-      <div className='container'>
-
-        <Menu />
-
+      <Menu handleDistribution={handleDistribution}/>
+      <div className={`container ${distribution}`} >
         <div className='box html'>
           <Editor
-            height='100%'
             defaultLanguage="html"
             onChange={handleHTML}
             theme='vs-dark'
@@ -35,7 +38,6 @@ function App () {
         </div>
         <div className='box css'>
           <Editor
-            height='100%'
             defaultLanguage="css"
             onChange={handleCSS}
             theme='vs-dark'
@@ -45,8 +47,6 @@ function App () {
         </div>
         <div className='box js'>
           <Editor
-            height='100%'
-            width='100%'
             defaultLanguage="javascript"
             onChange={handleJS}
             theme='vs-dark'
@@ -54,7 +54,7 @@ function App () {
             id='js'
           />
         </div>
-        <div className='box show-result'>
+        <div className='box result'>
           <Result html={html} css={css} js={js} />
         </div>
       </div>
