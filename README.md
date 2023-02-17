@@ -9,7 +9,7 @@ La página tiene 3 secciones de código (una de HTML, una de CSS y una de JS) y 
 
 ### Todo
 
-- [ ] Responsive (posibilidad de codear en modo móvil)
+- [X] Responsive (posibilidad de codear en modo móvil)
 - [X] Distintas combinaciones de los espacios de código (Mover los espacios de código)
 - [ ] Posibilidad de agregar dependencias en el JS (React, Vue, etc) o paquetes de npm
 - [ ] Posibilidad de agregar dependencias en el CSS (Sass, Less, etc)

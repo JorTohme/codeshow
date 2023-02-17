@@ -63,3 +63,18 @@
     "js js js js js js result result result result result result"
     "js js js js js js result result result result result result"
 }
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .container {
+    display: block;
+  }
+
+  .box {
+    width: 96%;
+    height: 50vh;
+    border: none;
+    border-bottom: 2px solid black;
+  }
+}
