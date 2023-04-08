@@ -33,7 +33,7 @@ function Result ({ html, css, js }) {
         '<head><style>' +
         preStyles + cssCode +
         '</style>' +
-        '<script>' + jsCode +
+        '<script defer>' + jsCode +
         '</script></head>' +
         '<body>' + htmlCode + '</body>'
         }
