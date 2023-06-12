@@ -33,9 +33,10 @@ function Result ({ html, css, js }) {
         '<head><style>' +
         preStyles + cssCode +
         '</style>' +
-        '<script defer>' + jsCode +
-        '</script></head>' +
-        '<body>' + htmlCode + '</body>'
+        '</head>' +
+        '<body>' + htmlCode +
+        '<script>' + jsCode + '</script>' +
+        '</body>'
         }
         title='result'
         sandbox='allow-scripts'
